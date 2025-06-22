@@ -1,0 +1,97 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    padding-right: 10PX;
+    padding-bottom: 10px;
+    color: yellow;
+    padding-top: 500px;
+}
+
+h2{
+   text-align: center;
+    padding-right: 10PX;
+    padding-bottom: 10px;
+    color: greenyellow;
+    padding-top: 300px; 
+}
+
+
+
+
+body{
+    background-image: url(images/IT.webp);
+    background-size: cover;
+    background-position: center;
+    
+    font-family: sans-serif;
+}
+
+.menu-bar{
+    background: yellowgreen;
+    text-align: center;
+}
+
+.menu-bar ul{
+display: inline-flex;
+list-style: none;
+color: white;
+}
+
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+    font-size: larger;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.active, .menu-bar ul li a:hover{
+  background: blue;
+  border-radius: 3px;
+}
+
+.sub-menu-1{
+    display: none;
+}
+
+
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background-color: blue;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: red;
+} 
+
+
